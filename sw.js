@@ -1,7 +1,7 @@
 /* 321阿摩司書講義 · Service Worker（離線可用）
    版本字串在每次 make_site.py 重新打包時都會變，
    一變就會清掉舊快取、重新抓一份新的，使用者不必手動清除。 */
-const V = '阿摩司書-e882fd337774';
+const V = '阿摩司書-f93260c0ed71';
 const PFX = '阿摩司書-';   /* 同一個 github.io 網域共用 Cache Storage：只清自己的前綴 */
 const NC = u => ({ cache: new URL(u).origin === self.location.origin ? 'no-cache' : 'default' });
 const SHELL = ["./", "./index.html", "./sc.html", "./en.html", "./manifest-en.webmanifest", "./manifest.webmanifest", "./icon-192.png", "./icon-512.png", "./icon-180.png", "./icon-167.png", "./icon-152.png", "./icon-120.png", "./icon-64.png", "./icon-32.png", "./favicon.ico", "./xz2.js", "./coread.js", "./peerjs.min.js"];
